@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coșul de cumpărături</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo" onclick="returnToMainPage()">Magazin Online</div>
+</header>
+
+<h1>Coșul de cumpărături</h1>
+<div id="cart-container">
+    <div id="cart-items"></div>
+    <div id="cart-summary">
+        <p id="cart-total">Total: 0 RON</p>
+        <button id="place-order" onclick="placeOrder()">Plasează comanda</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer" style="background-color: black; color: white; padding: 20px 0; text-align: center;">
+    <a href="#contact" style="color: white; margin: 0 15px; text-decoration: none;">Contact</a>
+    <a href="#terms" style="color: white; margin: 0 15px; text-decoration: none;">Termeni și condiții</a>
+</footer>
+
+<!-- Mesaj de eroare -->
+<div id="error-message" style="display: none;">
+    <!-- Mesajul de eroare va fi adăugat aici din JavaScript -->
+</div>
+
+<!-- Butonul pentru schimbarea modului -->
+<div id="dark-mode-container">
+    <img id="dark-mode-icon" src="day-and-night.png" alt="Dark Mode" onclick="toggleDarkMode()">
+</div>
+
+
+<script src="cart.js"></script>
+</body>
+</html>
